@@ -971,12 +971,12 @@ imports.wbg.__wbindgen_memory = function() {
     const ret = wasm.memory;
     return addHeapObject(ret);
 };
-imports.wbg.__wbindgen_closure_wrapper661 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 271, __wbg_adapter_24);
+imports.wbg.__wbindgen_closure_wrapper667 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 277, __wbg_adapter_24);
     return addHeapObject(ret);
 };
-imports.wbg.__wbindgen_closure_wrapper780 = function(arg0, arg1, arg2) {
-    const ret = makeMutClosure(arg0, arg1, 322, __wbg_adapter_27);
+imports.wbg.__wbindgen_closure_wrapper786 = function(arg0, arg1, arg2) {
+    const ret = makeMutClosure(arg0, arg1, 328, __wbg_adapter_27);
     return addHeapObject(ret);
 };
 imports['./snippets/dioxus-interpreter-js-1676574062e4c953/inline0.js'] = __wbg_star0;
@@ -1015,7 +1015,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('levelonejam-website-220741511ede3305_bg.wasm', import.meta.url);
+        input = new URL('levelonejam-website-2b34a30465098d44_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
