@@ -1,0 +1,47 @@
+name: Deploy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v1
+
+        - name: Push 2020 to GH-Pages
+          uses: cpina/github-action-push-to-another-repository@main
+          continue-on-error: true
+          env:
+            SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          with:
+            source-directory: '2020'
+            destination-github-username: 'levelonejam'
+            destination-repository-name: 'website-pub'
+            user-email: theluja@gmail.com
+            target-branch: gh-pages
+            target-directory: '2020'
+
+        - name: Push 2022 to GH-Pages
+          uses: cpina/github-action-push-to-another-repository@main
+          continue-on-error: true
+          env:
+            SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          with:
+            source-directory: '2022'
+            destination-github-username: 'levelonejam'
+            destination-repository-name: 'website-pub'
+            user-email: theluja@gmail.com
+            target-branch: gh-pages
+            target-directory: '2022'
+
+        - name: Push Current to GH-Pages
+          uses: cpina/github-action-push-to-another-repository@main
+          env:
+            SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          with:
+            source-directory: 'current'
+            destination-github-username: 'levelonejam'
+            destination-repository-name: 'website-pub'
+            user-email: theluja@gmail.com
+            target-branch: gh-pages
