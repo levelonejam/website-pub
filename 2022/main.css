@@ -1,0 +1,17 @@
+html {
+	/*scroll-behavior: smooth;*/
+	
+}
+
+.bg-group {
+	background-size:cover;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
