@@ -201,11 +201,11 @@ function makeMutClosure(arg0, arg1, dtor, f) {
     return real;
 }
 function __wbg_adapter_18(arg0, arg1, arg2) {
-    wasm.wasm_bindgen__convert__closures__invoke1_mut__hcaf12a08939d1cdc(arg0, arg1, addHeapObject(arg2));
+    wasm.wasm_bindgen__convert__closures__invoke1_mut__h3ba76a13a95b2c83(arg0, arg1, addHeapObject(arg2));
 }
 
 function __wbg_adapter_21(arg0, arg1, arg2) {
-    wasm.wasm_bindgen__convert__closures__invoke1_mut__h0bdb612cdbc3b6ea(arg0, arg1, addHeapObject(arg2));
+    wasm.wasm_bindgen__convert__closures__invoke1_mut__h483d5f642c1926ff(arg0, arg1, addHeapObject(arg2));
 }
 
 function isLikeNone(x) {
@@ -495,7 +495,7 @@ function __wbg_get_imports() {
         const ret = makeMutClosure(arg0, arg1, 43, __wbg_adapter_18);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper388 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper386 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 146, __wbg_adapter_21);
         return addHeapObject(ret);
     };
@@ -537,7 +537,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('levelonejam-bca1b8a85c1b07b4_bg.wasm', import.meta.url);
+        input = new URL('levelonejam-e2eae761a27e3f3c_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
