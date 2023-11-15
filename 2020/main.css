@@ -1,0 +1,18 @@
+html {
+	/*scroll-behavior: smooth;*/
+	
+}
+
+.container {
+    max-width: 960px;
+}
+
+.bg-group {
+	background: url('/group.jpg') center center;
+	background-size:cover;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
