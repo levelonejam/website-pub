@@ -1,0 +1,13 @@
+html {
+	/*scroll-behavior: smooth;*/
+	
+}
+
+.container {
+    max-width: 960px;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
