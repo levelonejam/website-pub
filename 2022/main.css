@@ -3,6 +3,10 @@ html {
 	
 }
 
+.bg-group {
+	background-size:cover;
+}
+
 .container {
     max-width: 960px;
 }
