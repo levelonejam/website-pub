@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="" style="background-color: rgb(20,20,20);overflow:hidden;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../overwrite.css">
+    <style> body {padding: 0; margin: 0; background-color: rgb(20,20,20);} </style>
+    <style>
+      .center{
+        display: block;
+        margin-left: auto; 
+        margin-right: auto; 
+        width: 50%;
+      }
+      .content{
+        max-width: 500px;
+        margin: auto;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js" integrity="sha256-8IAwtdm0tRSYpMA1G5K1jpeHZq1N02yrdpoBteVVuMc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js" integrity="sha256-GdlroanCXFgv0ILaTQ1v0qnNxc+FQNjjXADWxmtr7PM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.3/dist/confetti.browser.min.js"></script>
+    <script src="confetti.min.js"></script>
+    <script src="lottery.js"></script>
+  </head>
+  <body>
+    <!-- Main container -->
+    <nav class="level">
+      <!-- Left side -->
+      <div class="level-item has-text-centered">
+        <div>
+          <div class="level-item" style="padding: 5px;">
+            <figure class="image is-256x256">
+              <a class="logo" href="#" ><img style="height: 50px; width: 280px" src="/loj_logo.png"></a>
+              <br>
+              <p class="is-size-4" style="color: var(--main-accent);">Level One : Jam's Lottery</p>
+            </figure>
+            <div class="colums is-multiline has-text-centered">
+              <a id="start_btn" style="margin: 5px;" class="button is-link is-outlined" onclick="startWheel(40)">Spin</a>
+              <a id="stop_btn" style="margin: 5px;" class="button is-link is-outlined" onclick="stopWheel()">Stop</a>
+              <div id="status_text" class="is-size-3" style="color: var(--main-accent);">Running</div>
+            </div>
+            
+          </div>
+          <div id="winner_text" class="is-size-3" style="margin-top:-20px;color: var(--main-accent);"></div>
+        </div>      
+      </div>
+      
+      <!-- Right side -->
+      <div class="level-item has-text-centered">
+        <div id="canvasContainer" class="level-item"></div> 
+      </div>
+      <div id="extraCanvas">
+
+      </div>
+    </nav>
+  </body>
+</html>
