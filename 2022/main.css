@@ -4,7 +4,9 @@ html {
 }
 
 .bg-group {
+  background: url("/group.jpg") center center;
 	background-size:cover;
+  display: none;
 }
 
 .container {
